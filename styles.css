@@ -1,3 +1,6 @@
+html {
+    display: block;
+}
 body {
   background-color:goldenrod;
 }
@@ -22,17 +25,21 @@ h4 {
     color:#080fdf
 }
 
-section {
-    display: grid;
-	place-items: center;
-	min-height: 100vh;
-	margin-inline: 6vw;
-	background: hsl(60, 87%, 49%) !important;
-	line-height: 1.5;
-	font-kerning: initial;
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
 }
 
-section p:first-letter {
+article .container {
+	display: flex;
+    flex-direction: row;
+    width: 20%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+section p::first-letter {
     float: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:x-large;
@@ -40,6 +47,21 @@ section p:first-letter {
     font-weight: bold;
 }
 
+aside .container { 
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+ul li:nth-child(even) {
+    color: deepskyblue;
+}
+
+ul li:nth-child(odd) {
+    color: rgb(32, 156, 8);
+}
 a {
     color:turquoise
 }
