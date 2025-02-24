@@ -34,9 +34,12 @@ main {
 article .container {
 	display: flex;
     flex-direction: row;
-    width: 20%;
-    padding: 20px;
+    padding: 10px;
     border-radius: 5px;
+}
+
+section {
+    width:85%;
 }
 
 section p::first-letter {
@@ -50,9 +53,12 @@ section p::first-letter {
 aside .container { 
     display: flex;
     flex-direction: column;
-    width: 20%;
-    padding: 20px;
-    border-radius: 5px;
+}
+
+aside {
+    background-color: firebrick;
+    max-height: fit-content;
+    padding-right: 10px;
 }
 
 ul li:nth-child(even) {
